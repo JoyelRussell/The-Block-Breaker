@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Block Breaker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+
+<div id="game-container">
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    
+    <div class="ui-layer">
+        <div class="hud">
+            <div id="scoreDisplay">Score: 0</div>
+            <div id="livesDisplay">Lives: 3</div>
+        </div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="overlay">
+        <h1>Neon Breaker</h1>
+        <button class="btn" id="startBtn">Play Game</button>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="gameOverScreen" class="overlay hidden">
+        <h1 id="game-over-title">Game Over</h1>
+        <p style="font-size: 1.5rem; margin-bottom: 30px;">Final Score: <span id="finalScoreDisplay">0</span></p>
+        <button class="btn" id="restartBtn">Try Again</button>
+    </div>
+
+    <!-- Victory Screen -->
+    <div id="victoryScreen" class="overlay hidden">
+        <h1 id="victory-title">Victory!</h1>
+        <p style="font-size: 1.5rem; margin-bottom: 30px;">You cleared all blocks! Score: <span id="victoryScoreDisplay">0</span></p>
+        <button class="btn" id="playAgainBtn">Play Again</button>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
